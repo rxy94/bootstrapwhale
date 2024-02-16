@@ -93,7 +93,8 @@ Luego lo he enlazado con la sección Introduction</p>
 
 <h2 id="estilo">Estilo de la página</h2>
 <h3>Paleta de colores</h3>
-<img src="readme-bm/paletacoloresreadme.png" alt="paleta de colores usada" style="width:50%">
+<p>Sin incluir las clases predefinidas de Bootstrap v5.3</p>
+<img src="readme-bm/readmePaletaColores.png" alt="paleta de colores usada" style="width:50%">
 <h3>Tipografías</h3>
 <ul>
   <li>Oswald regular</li>  
