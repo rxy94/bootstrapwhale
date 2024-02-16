@@ -1,0 +1,99 @@
+/***************************************************************************/
+/*                     Stylesheet for Bootstrap - Whale with me            */
+/*                     Author: Ruyi Xia Ye                                 */
+/*                     Version: 1.0                                        */
+/*                     Date: February 2023                                 */
+/*                     Comments: Lenguajes de Marcas project               */
+/***************************************************************************/
+
+/************************     EXTERNAL FONTS     ***********************************/
+@font-face {
+    font-family: title;
+    src: url(../fonts/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: contenido;
+    src: url(../fonts/SourceSans3-Regular.ttf);
+}
+
+
+/******************************     GENERAL    *************************************/
+div.row {margin: 0px;}
+
+div.container-fluid {padding: 0px;}
+
+body {font-family: contenido;}
+
+#hero {background-image: url(../img/heroimg700px.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#title {font-family: title;}
+
+#herobutton {font-family: title;}
+
+#herobutton:hover {background-color: rgb(115, 150, 194) !important;}
+
+.contentbtn:hover {background-color: rgb(115, 150, 194) !important;}
+
+.contentcard:hover {box-shadow: 3px 3px 5px rgb(43, 77, 117);}
+
+.resourcescard:hover {box-shadow: 3px 3px 5px #f1b48e !important;}
+
+.resourcesbtn:hover {background-color: #f1b48e !important;}
+
+#contactimg {background-image: url(../img/imagen-ai-ballena\ \(2\).jpg);
+    background-size: cover;
+    background-position: left;}
+
+.submitbtn:hover {background-color: rgb(27, 44, 65) !important;}
+
+.footerlink:hover {border-left: 4px solid #f1b48e ;
+                transition: 0.3s;}
+
+i:hover {color: #f1b48e;}
+
+
+/*************************       COLOURS     ***************************************/
+.bg-softblue {background-color: rgb(48, 74, 105) !important;}
+
+.bg-lightblue {background-color:  rgb(115, 150, 194)  !important;}
+
+.bg-deepblue {background-color:  rgb(27, 44, 65) !important;}
+
+.btn-softblue {background-color:  rgb(43, 77, 117) !important;}
+
+.text-sm-orange {color: #f18e50 !important;}
+
+.bg-orange {background-color: #f1b48e !important;}
+
+.btn-orange {background-color:  #f1b48e!important;}
+
+
+
+/***************************       SIZES         *************************************/
+.display-6 {font-size: 1.8em !important;}
+
+
+
+
+
+/**************************   @MEDIA   *********************************************/
+@media screen and (min-width:800px) {
+
+    #hero {background-image: url(../img/heroimg.jpg);}
+    #title {color: white !important;}
+
+}
+
+@media screen and (max-width: 800px) and (orientation:landscape) {
+
+    #hero {background-image: url(../img/backgroundlandscape.jpg);}
+    #herobutton {top: 25%;
+        left: 5%;
+        font-size: 1em;
+    }
+
+}
