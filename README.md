@@ -45,7 +45,8 @@ Luego lo he enlazado con la sección Introduction</p>
 <p>En la segunda columna introduzco un vídeo de National Geographic sacado de Youtube a través de un link.</p>
 
 <h3>Content</h3>
-<img src="readme-bm/readmeContent.png" alt="imagen de Content section" style="width:50%">
+<img src="readme-bm/readmeContent.png" alt="imagen de Content section" style="width:50
+%">
 <p>En esta sección he introducido un grid de 4 columnas - div.container>row>(div.col)*4: </p>
 <p>En cada columna he introducido un div.card estilado y al que le he añadido una imagen y un Call to Action - "Read more".</p>
 <p>En cada una de las cards he introducido un párrafo de texto muy corto explicando de qué va cada una.</p>
@@ -60,6 +61,11 @@ Luego lo he enlazado con la sección Introduction</p>
 <img src="readme-bm/readmeGallery.png" alt="imagen de Gallery section" style="width:50%">
 <p>He introducido una galería tipo slideshow o carousel estilado con la guía de Bootstrap v5.3.</p>
 <p>La galería se compone de 6 imágenes sacadas de Freepik y Unsplash.</p>
+
+<h3>Contact form</h3>
+<img src="readme-bm/readmeContact.png" alt="imagen de Contact section" style="width:50%">
+<p>He introducido una imagen y un formulario de contacto estilado con la guía de Bootstrap v5.3.</p>
+<p>La imagen está sacada de Freepik.</p>
 
 <h3>Footer</h3>
 <p>Lo he dispuesto en un grid de 4 columnas: </p>
