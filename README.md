@@ -45,7 +45,7 @@ Luego lo he enlazado con la sección Introduction</p>
 <p>En la segunda columna introduzco un vídeo de National Geographic sacado de Youtube a través de un link.</p>
 
 <h3>Content</h3>
-<img src="readme-bm/readmeContent.png" alt="imagen de Content section" style="width:50
+<img src="readme-bm/readmeContent.png" alt="imagen de Content section" style="width:50%">
 %">
 <p>En esta sección he introducido un grid de 4 columnas - div.container>row>(div.col)*4: </p>
 <p>En cada columna he introducido un div.card estilado y al que le he añadido una imagen y un Call to Action - "Read more".</p>
