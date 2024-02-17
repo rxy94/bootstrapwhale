@@ -40,19 +40,19 @@ Luego lo he enlazado con la sección Introduction</p>
 
 <h3>Introduction</h3>
 <img src="readme-bm/readmeIntro.png" alt="imagen de Introduction section" style="width:50%">
-<p>En esta sección he introducido un grid de 2 columnas - div.container>row>(div.col)*2: </p>
+<p>En esta sección he introducido un grid de 2 columnas: </p>
 <p>En la primera columna introduzco un párrafo de texto a modo introductorio al mundo de las ballenas azules.</p>
 <p>En la segunda columna introduzco un vídeo de National Geographic sacado de Youtube a través de un link.</p>
 
 <h3>Content</h3>
 <img src="readme-bm/readmeContent.png" alt="imagen de Content section" style="width:50%">
-<p>En esta sección he introducido un grid de 4 columnas - div.container>row>(div.col)*4: </p>
+<p>En esta sección he introducido un grid de 4 columnas: </p>
 <p>En cada columna he introducido un div.card estilado y al que le he añadido una imagen y un Call to Action - "Read more".</p>
 <p>En cada una de las cards he introducido un párrafo de texto muy corto explicando de qué va cada una.</p>
 
 <h3>Resources</h3>
 <img src="readme-bm/readmeResources.png" alt="imagen de Resources section" style="width:50%">
-<p>En esta sección he introducido un grid de 4 columnas - div.container>row>(div.col)*4: </p>
+<p>En esta sección he introducido un grid de 4 columnas: </p>
 <p>En cada columna he introducido un div.card estilado y al que le he añadido una imagen y un Call to Action - "Learn more".</p>
 <p>Si hago click en los botones Call to Action me llevan a cada una de las páginas web mostradas en la imagen de la card.</p>
 
@@ -63,6 +63,7 @@ Luego lo he enlazado con la sección Introduction</p>
 
 <h3>Contact form</h3>
 <img src="readme-bm/readmeContact.png" alt="imagen de Contact section" style="width:50%">
+<p>He dispuesto esta sección en un grid de 2 columnas:
 <p>He introducido una imagen y un formulario de contacto estilado con la guía de Bootstrap v5.3.</p>
 <p>La imagen está sacada de Freepik.</p>
 
@@ -88,7 +89,7 @@ Luego lo he enlazado con la sección Introduction</p>
 </ul>
 <p>Cuarta columna: </p>
 <ul>
-  <li>Contact us: incluyo un email de contacto y un Call to Action - "Donate".</li>  
+  <li>Email us: incluyo un email de contacto y un Call to Action - "Donate".</li>  
 </ul>
 
 <h2 id="estilo">Estilo de la página</h2>
