@@ -98,7 +98,7 @@
                             <div class="card-body">
                                 <h3 class="text-center fw-bold">Appearance</h3>
                                 <p class="text-center">Blue whales look like...</p>
-                                <a href="#" class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Read more</a>
+                                <a class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://oceantoday.noaa.gov/whaleanatomy/" target="_blank">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             <div class="card-body">
                                 <h3 class="text-center fw-bold">Diet</h3>
                                 <p class="text-center">Blue whales' diet is...</p>
-                                <a href="#" class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Read more</a>
+                                <a class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://www.fisheries.noaa.gov/species/blue-whale" target="_blank">Read more</a>
                             </div>    
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                             <div class="card-body">
                                 <h3 class="text-center fw-bold">Reproduction</h3>
                                 <p class="text-center">Female blue whales...</p>
-                                <a href="#" class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Read more</a>
+                                <a class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://www.marinemammalcenter.org/animal-care/learn-about-marine-mammals/cetaceans/blue-whale#:~:text=Breeding%20%26%20Behavior,blue%20whales%20are%20big%20babies!" target="_blank">Read more</a>
                             </div>    
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                             <div class="card-body">
                                 <h3 class="text-center fw-bold">Conservation</h3>
                                 <p class="text-center">Aggressive hunting...</p>
-                                <a href="#" class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Read more</a>
+                                <a class="contentbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://iwc.int/about-whales/whale-species/blue-whale#:~:text=Conservation%20status,-Because%20a%20single&text=Over%20300%2C000%20blue%20whales%20were,to%207%25%20per%20year11." target="_blank">Read more</a>
                             </div>    
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                             <img src="./img/wwf_logo_750_x_600.jpg" class="card-img-top" alt="wwflogo">
                             <div class="card-body">
                                 <h3> </h3>
-                                <a href="#" class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Learn more</a>
+                                <a class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://www.worldwildlife.org/search?cx=003443374396369277624%3Av3nraqhmeyk&ie=UTF-8&x=blue+whale#gsc.tab=0&gsc.q=blue%20whale&gsc.page=1" target="_blank">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                             <img src="./img/nationalgeographic.png" class="card-img-top" alt="nationalgeographiclogo">
                             <div class="card-body">
                                 <h3> </h3>
-                                <a href="#" class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Learn more</a>
+                                <a class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://www.nationalgeographic.com/search?q=blue%20whale&location=srp&type=manual" target="_blank">Learn more</a>
                             </div>    
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                             <img src="./img/oceanalogo.png" class="card-img-top" alt="oceanalogo">
                             <div class="card-body">
                                 <h3> </h3>
-                                <a href="#" class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Learn more</a>
+                                <a class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://oceana.org/marine-life/blue-whale/" target="_blank">Learn more</a>
                             </div>    
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                             <img src="./img/greenpeacelogo.png" class="card-img-top" alt="greenpeacelogo">
                             <div class="card-body">
                                 <h3> </h3>
-                                <a href="#" class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3">Learn more</a>
+                                <a class="resourcesbtn btn d-block bg-softblue text-white w-50 mx-auto rounded-3" href="https://es.greenpeace.org/es/?search=ballena%20azul" target="_blank">Learn more</a>
                             </div>    
                         </div>
                     </div>
@@ -285,70 +285,106 @@
                 <div class="row g-5">
 
                     <div id="contactimg" class="col-0 col-lg-6 rounded-3">
-
                     </div>
         
-                    <div id="contactform" class="col-12 col-lg-6 mt-0 mt-lg-5">
-                        <form action="" method="post" class="p-5 text-danger">
+                    <div class="col-12 col-lg-6 mt-0 mt-lg-5">
+                        <!--Form body-->
+<!--He tenido que quitar la función de Reset() de todos los inputs porque al escribir algo en un campo y pasar al siguiente, lo escrito en el campo anterior desaparece. He intentado varias maneras de arreglarlo sin éxito.-->
+                        <form action="" method="post" onsubmit="return validation()" class="p-5 text-danger">
                             <h1 class="text-white text-center fw-bold">Contact form</h1>
         
                             <div class="mb-3">
-                                <label for="nombre" class="form-label lead text-white">Name: <span class="text-sm-orange">*</span></label>
-                                <input type="text" class="form-control " id="nombre" name="nombre" aria-describedby="nombreHelp">
+                                <label for="name" class="form-label lead text-white">Name: <span class="text-sm-orange">*</span></label>
+                                <input type="text" class="form-control " id="name" name="name" aria-describedby="nameHelp">
+                                <div id="nameHelp" class="form-text text-sm-orange">Mandatory field</div>
                             </div>
         
                             <div class="mb-3">
-                                <label for="apellidos" class="form-label lead text-white">Surname/s: <span class="text-sm-orange">*</span></label>
-                                <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
+                                <label for="surnames" class="form-label lead text-white">Surname/s: <span class="text-sm-orange">*</span></label>
+                                <input type="text" class="form-control" id="surnames" name="surnames" aria-describedby="surnamesHelp">
+                                <div id="surnamesHelp" class="form-text text-sm-orange">Mandatory field</div>
                             </div>
         
                             <div class="mb-3">
                                 <label for="email" class="form-label lead text-white">Email: <span class="text-sm-orange">*</span></label>
                                 <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text text-sm-orange">Valid email format required</div>
                             </div>
         
                             <div class="mb-3">
-                                <label for="provincia" class="form-label lead text-white">City: <span class="text-sm-orange">*</span></label>
-                                <select class="form-select" aria-label="Default select example" id="provincia" name="provincia">
+                                <label for="city" class="form-label lead text-white">City: <span class="text-sm-orange">*</span></label>
+                                <select class="form-select" aria-label="Default select example" id="city" name="city">
                                     <option value="0">-- Choose your city</option>
                                     <option value="29">Málaga</option>
                                     <option value="18">Granada</option>
                                     <option value="4">Almería</option>
                                 </select>
+                                <div id="cityHelp" class="form-text text-sm-orange">Mandatory field</div>
                             </div>
         
-                            <label for="provincia" class="form-label lead text-white">Gender:</label>
-                            <div class="mb-3 form-check">
+                            <label for="gender" class="form-label lead text-white">Gender:</label>
+                            <div class="mb-3">
                                 <div class="form-check text-white">
-                                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
-                                    <label class="form-check-label" for="masculino">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    <label class="form-check-label" for="male">
                                         Male
                                     </label>
                                 </div>
         
                                 <div class="form-check text-white">
-                                    <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
-                                    <label class="form-check-label" for="femenino">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label class="form-check-label" for="female">
                                         Female
                                     </label>
                                 </div>
         
                                 <div class="form-check text-white">
-                                    <input class="form-check-input" type="radio" name="sexo" id="otro" value="otro">
-                                    <label class="form-check-label" for="otro">
+                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                    <label class="form-check-label" for="other">
                                         Other
                                     </label>
                                 </div>
-        
-                                <div class="my-5 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1"><a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-sm-orange text-decoration-none">I accept the terms and conditions</a></label>
-                                </div>
-        
+                            </div>
+
+                            <div class="my-5 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms">
+
+                                <!-- Terms and Conditions Modal trigger-->
+                                <label class="form-check-label" for="terms">
+                                    <a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModalTerms" class="text-sm-orange text-decoration-none">I accept the terms and conditions</a>
+                                </label>
+                                <div id="termsHelp" class="form-text text-sm-orange">Mandatory field</div>
                             </div>
                             
-                            <button type="submit" class="submitbtn btn btn-orange m-2"><span class="text-white">Submit</span></button>
+                            <button type="submit" class="btn btn-orange submitbtn m-2"><span class="text-white">Submit</span></button>
                         </form>
+
+                        <!-- Terms and Conditions Modal Box-->
+                        <div class="modal fade" id="exampleModalTerms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content bg-deepblue">
+
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body bg-orange">
+
+                                    <h2 class="text-white fw-bold text-center">TERMS & CONDITIONS</h2>
+                                    <p class="text-white text-center">Last updated: 25/02/2024</p>
+                                    <p class="text-white ms-2">Please read these Terms and Conditions carefully before using the contact form of this website operated by the Whale with me © company.</p>
+                                    <p class="text-white ms-2">Your access to and use of the contact form is conditioned on your acceptance of and compliance with these Terms and Conditions. These terms apply to all visitors, users and others who access or use this website.</p>
+                                    <p class="text-white ms-2">If you disagree with any part of the Terms and Conditions then you may not access to the contact form. </p>
+                                    
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                            </div>    
+                        </div> 
                                 
                     </div>
         
@@ -467,7 +503,6 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
 
                             </div>
@@ -494,9 +529,9 @@
 
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/whalejs.js"></script>
 
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

@@ -19,6 +19,8 @@
 
 
 /******************************     GENERAL    *************************************/
+.form-text {visibility: hidden;}
+
 div.row {margin: 0px;}
 
 div.container-fluid {padding: 0px;}
