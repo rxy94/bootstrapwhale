@@ -289,31 +289,30 @@
         
                     <div class="col-12 col-lg-6 mt-0 mt-lg-5">
                         <!--Form body-->
-<!--He tenido que quitar la función de Reset() de todos los inputs porque al escribir algo en un campo y pasar al siguiente, lo escrito en el campo anterior desaparece. He intentado varias maneras de arreglarlo sin éxito.-->
                         <form action="" method="post" onsubmit="return validation()" class="p-5 text-danger">
                             <h1 class="text-white text-center fw-bold">Contact form</h1>
         
                             <div class="mb-3">
                                 <label for="name" class="form-label lead text-white">Name: <span class="text-sm-orange">*</span></label>
-                                <input type="text" class="form-control " id="name" name="name" aria-describedby="nameHelp">
+                                <input onclick="resetear('name')" type="text" class="form-control " id="name" name="name" aria-describedby="nameHelp">
                                 <div id="nameHelp" class="form-text text-sm-orange">Mandatory field</div>
                             </div>
         
                             <div class="mb-3">
                                 <label for="surnames" class="form-label lead text-white">Surname/s: <span class="text-sm-orange">*</span></label>
-                                <input type="text" class="form-control" id="surnames" name="surnames" aria-describedby="surnamesHelp">
+                                <input onclick="resetear('surnames')" type="text" class="form-control" id="surnames" name="surnames" aria-describedby="surnamesHelp">
                                 <div id="surnamesHelp" class="form-text text-sm-orange">Mandatory field</div>
                             </div>
         
                             <div class="mb-3">
                                 <label for="email" class="form-label lead text-white">Email: <span class="text-sm-orange">*</span></label>
-                                <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                <input onclick="resetear('email')" type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text text-sm-orange">Valid email format required</div>
                             </div>
         
                             <div class="mb-3">
                                 <label for="city" class="form-label lead text-white">City: <span class="text-sm-orange">*</span></label>
-                                <select class="form-select" aria-label="Default select example" id="city" name="city">
+                                <select onclick="resetear('city')" class="form-select" aria-label="Default select example" id="city" name="city">
                                     <option value="0">-- Choose your city</option>
                                     <option value="29">Málaga</option>
                                     <option value="18">Granada</option>
@@ -347,7 +346,7 @@
                             </div>
 
                             <div class="my-5 form-check">
-                                <input type="checkbox" class="form-check-input" id="terms">
+                                <input onclick="resetear('terms')" type="checkbox" class="form-check-input" id="terms">
 
                                 <!-- Terms and Conditions Modal trigger-->
                                 <label class="form-check-label" for="terms">

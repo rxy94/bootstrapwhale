@@ -49,8 +49,8 @@ function validation() {
 
 }
 
-/*He tenido que quitar la función Reset() del HTML porque esta función me borra lo escrito en un campo al pasar al siguiente, incluso sin haber pulsado el botón submit.*/
-function reset(id) {
+
+function resetear(id) {
     document.getElementById(id + 'Help').style.visibility="hidden";
     document.getElementById(id).style.borderColor="lightgray";
 }
