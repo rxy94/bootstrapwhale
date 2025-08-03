@@ -122,3 +122,12 @@ Luego lo he enlazado con la sección Introduction</p>
   <li>Modal box for Credits - <a href="https://getbootstrap.com/docs/5.3/components/modal/#how-it-works" target="_blank">link</a></li>
 </ul>
 
+## Dónde visitar la página
+Puedes ver el proyecto en funcionamiento en:  
+🔗 [Enlace al sitio web desplegado](https://rxy94.github.io/bootstrapwhale/)  
+_(Reemplaza este enlace por el correcto si es otro)_
+
+## Créditos
+Este proyecto ha sido realizado íntegramente por **Ruyi Xia Ye** como parte del módulo de **Lenguajes de Marcas** en 1º DAW.  
+Todos los recursos visuales y fragmentos de código utilizados cuentan con licencia abierta o educativa, y se citan adecuadamente en este documento.
+
